@@ -15,15 +15,15 @@
         <br><br>
 
         <div v-if="textoDigitado == 1">
-            <img v-bind:src = "srcImg1"  :title = "titleImg" width="800px" />           
+            <img v-bind:src = "srcImg1"  :title = "titleImg1" width="800px" />           
         </div>
 
         <div v-else-if="textoDigitado == 2">
-            <img  v-bind:src = "srcImg2"  :title = "titleImg" width="800px" />           
+            <img  v-bind:src = "srcImg2"  :title = "titleImg2" width="800px" />           
         </div>
 
         <div v-else>
-            <img  v-bind:src = "srcImg3" :title = "titleImg" width="800px" />           
+            <img  v-bind:src = "srcImg3" :title = "titleImg3" width="800px" />           
         </div>
 
 
@@ -41,7 +41,9 @@ new Vue ({
          srcImg1: "https://www.cupcom.com.br/wp-content/uploads/2020/10/IMAGENS-SITEuv-vuejs.jpg",
          srcImg2: 'https://tocode.ru/static/uploads/courses/3/preview@2x.png',
          srcImg3: 'https://w7.pngwing.com/pngs/121/358/png-transparent-vue-js-javascript-software-framework-nuxt-js-web-application-vue-js-web-application-vuejs-vue-js.png',
-         titleImg: 'Logo Vue',       
+         titleImg1: 'Logo Vue1',   
+         titleImg2: 'Logo Vue2', 
+         titleImg3: 'Logo Vue3',    
         
     },
    
