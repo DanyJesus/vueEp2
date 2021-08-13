@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue - Primeiro Episódio</title>
+</head>
+<body>
+    <div id="app">
+      
+       <img 
+       v-bind:src = "srcImg" 
+       :title = "titleImg" />
+
+       <hr>
+       <a v-bind:href="url"> Vue </a>
+
+       <hr>
+
+       <p v-text="textPar">
+       <hr>
+
+       <p v-html="textPar">
+
+       </p>
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+new Vue ({
+    el : '#app',
+    data: {
+         srcImg: "https://www.cupcom.com.br/wp-content/uploads/2020/10/IMAGENS-SITEuv-vuejs.jpg",
+         titleImg: 'Logo Vue',
+         url: "https://www.blogsaays.com/wp-content/uploads/2021/05/Vue-js.png",
+         textPar: '<di>Sou <br> Abeçoadona!!</div>'
+        
+    },
+   
+});
+
+    </script>
+</body>
+</html>
