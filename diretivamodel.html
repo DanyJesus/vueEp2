@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue - Primeiro Episódio</title>
+</head>
+<body>
+    <div id="app">
+
+        <input type="text" v-model="textoDigitado">
+        {{ textoDigitado }}
+
+        <br><br>
+
+        <div v-if="textoDigitado == 1">
+            <img v-bind:src = "srcImg1"  :title = "titleImg" width="800px" />           
+        </div>
+
+        <div v-else-if="textoDigitado == 2">
+            <img  v-bind:src = "srcImg2"  :title = "titleImg" width="800px" />           
+        </div>
+
+        <div v-else>
+            <img  v-bind:src = "srcImg3" :title = "titleImg" width="800px" />           
+        </div>
+
+
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+new Vue ({
+    el : '#app',
+    data: {
+        textoDigitado: '',
+         srcImg1: "https://www.cupcom.com.br/wp-content/uploads/2020/10/IMAGENS-SITEuv-vuejs.jpg",
+         srcImg2: 'https://tocode.ru/static/uploads/courses/3/preview@2x.png',
+         srcImg3: 'https://w7.pngwing.com/pngs/121/358/png-transparent-vue-js-javascript-software-framework-nuxt-js-web-application-vue-js-web-application-vuejs-vue-js.png',
+         titleImg: 'Logo Vue',       
+        
+    },
+   
+});
+
+    </script>
+</body>
+</html>
